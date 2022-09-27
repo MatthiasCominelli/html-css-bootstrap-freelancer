@@ -5,112 +5,208 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- CSS only -->
+    <title>Bootstrap | Coding</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="./css/style.css">
-    <title>START BOOTSTRAP</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous">
+        </script>
+    <script src="https://kit.fontawesome.com/b7be07993a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <!-- header  -->
     <header>
-        <div class="container py-3 d-flex justify-content-between">
-            <h4>START BOOTSTRAP</h4>
-            <i class="bi bi-list"></i>
-        </div>
+        <nav class="navbar navbar-expand-md navbar-dark h-100">
+            <div class="container-md text-uppercase">
+                <a class="navbar-brand" href="#">start bootstrap</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse my-navbar-grow" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">about</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </header>
-    <!-- main con 5 sezioni -->
     <main>
-        <!-- prima section profilo -->
-        <section id="profilo">
-            <div class="container d-flex justify-content-center">
+        <section id="start" class="nc-bg-green">
+            <!-- "Start Bootstrap" section -->
+            <div class="container py-4 text-center">
+                <div class="row justify-content-center">
+                    <div class="col-6">
+                        <img id="nc-avatar" class="img-fluid" src="img/avatar.svg" alt="avatar">
+                    </div>
+                    <div class="col-12 py-2">
+                        <h1 class="text-uppercase text-nowrap">Start Bootstrap</h1>
+                    </div>
+                    <div class="col-12 nc-star">
+                        <i class="bi bi-star-fill align-middle px-2"></i>
+                    </div>
+                    <div class="col-12 pt-3">
+                        <h4 class="text-uppercase text-nowrap">Graphic artist - web designer - illustrator</h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="pt-5">
+            <!-- portfolio section -->
+            <div class="container">
+                <div class="row text-center gy-4">
+                    <div class="col-12">
+                        <h2>PORTFOLIO</h2>
+                    </div>
+                    <div class="col-12 nc-star black-border">
+                        <i class="bi bi-star-fill align-middle"></i>
+                    </div>
+                    <div class="col-12 col-md-6 col-xl-4">
+                        <img src="img/cabin.png" alt="" class="img-fluid rounded-4">
+                    </div>
+                    <div class="col-12 col-md-6 col-xl-4">
+                        <img src="img/cake.png" alt="" class="img-fluid rounded-4">
+                    </div>
+                    <div class="col-12 col-md-6 col-xl-4">
+                        <img src="img/circus.png" alt="" class="img-fluid rounded-4">
+                    </div>
+                    <div class="col-12 col-md-6 col-xl-4">
+                        <img src="img/game.png" alt="" class="img-fluid rounded-4">
+                    </div>
+                    <div class="col-12 col-md-6 col-xl-4">
+                        <img src="img/safe.png" alt="" class="img-fluid rounded-4">
+                    </div>
+                    <div class="col-12 col-md-6 col-xl-4">
+                        <img src="img/submarine.png" alt="" class="img-fluid rounded-4">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="pt-5 pb-4 mt-5 nc-bg-green nc-white-text">
+            <!-- ABOUT section -->
+            <div class="container text-center">
                 <div class="row">
-                    <div class="col-12 text-center">
-                        <img src="./img/avatar.svg" alt="avatar">
-                        <h1>START BOOTSTRAP</h1>
-                        <div class="d-flex justify-content-center">
-                            <hr>
-                            <i class="bi bi-star"></i>
-                            <hr>
+                    <div class="col-12">
+                        <h2 class="text-uppercase">About</h2>
+                    </div>
+                    <div class="col-12 nc-star small-wings">
+                        <i class="bi bi-star-fill align-middle px-2"></i>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-12 col-lg-6 px-5 nc-about-container">
+                        <p class="text-start text-wrap">
+                            Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the
+                            complete source files including HTML, CSS, and JavaScript as well as optional LESS
+                            stylesheets for easy customization.
+                        </p>
+                    </div>
+                    <div class="col-12 col-lg-6 px-5 nc-about-container">
+                        <p class="text-start">
+                            Whether you're a student looking to showcase your work, a proffesional looking to attract
+                            clients, or a graphic artist looking to share your projects, this template is the perfect
+                            starting point!
+                        </p>
+                    </div>
+                    <div class="col-12 pt-3">
+                        <button type="button" class="btn btn-outline-light download-btn">
+                            <i class="bi bi-download"></i>
+                            <span>Download</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="pt-5" id="contact">
+            <!-- Contact Me section -->
+            <div class="container text-center">
+                <div class="row">
+                    <div class="col-12">
+                        <h2 class="text-uppercase">Contact Me</h2>
+                    </div>
+                    <div class="col-12 nc-star black-border small-wings">
+                        <i class="bi bi-star-fill align-middle px-2"></i>
+                    </div>
+                    <div class="col-12 px-5 pt-3 text-start nc-dark-text">
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label fw-bold">Name</label>
+                            <input type="email" class="form-control nc-input-box" id="exampleFormControlInput1"
+                                placeholder="">
                         </div>
-                        <div class="d-flex justify-content-center">
-                            <span class="text-center">GRAPHIC ARTIST - WEB DESIGNER - ILLUSTRATOR</span>
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label fw-bold">Email address</label>
+                            <input type="email" class="form-control nc-input-box" id="exampleFormControlInput1"
+                                placeholder="">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label fw-bold">Phone Number</label>
+                            <input type="email" class="form-control nc-input-box" id="exampleFormControlInput1"
+                                placeholder="">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleFormControlTextarea1" class="form-label fw-bold">Example
+                                textarea</label>
+                            <textarea class="form-control nc-input-box" id="exampleFormControlTextarea1"
+                                rows="3"></textarea>
+                        </div>
+                        <div class="col-12">
+                            <button type="button" class="btn btn-primary nc-green-btn">Send</button>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- seconda section portfolio -->
-        <section id="portfolio">
-            <!-- title -->
-            <div class="container">
-                <div class="row">
-                    <div class="col">
-                        <h5>PORTFOLIO</h5>
-                        <div class="d-flex justify-content-center">
-                            <hr>
-                            <i class="bi bi-star"></i>
-                            <hr>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- immagine casa di legno -->
-            <div class="container">
-                <div class="row">
-                    <div class="col-12 d-flex justify-content-center">
-                        <img src="./img/cabin.png" alt="casa di legno">
-                    </div>
-                </div>
-            </div>
-            <!-- immagine torta -->
-            <div class="container">
-                <div class="row">
-                    <div class="col-12 d-flex justify-content-center">
-                        <img src="./img/cake.png" alt="torta">
-                    </div>
-                </div>
-            </div>
-            <!-- immagine circo -->
-            <div class="container">
-                <div class="row">
-                    <div class="col-12 d-flex justify-content-center">
-                        <img src="./img/circus.png" alt="circo">
-                    </div>
-                </div>
-            </div>
-            <!-- immagine game -->
-            <div class="container">
-                <div class="row">
-                    <div class="col-12 d-flex justify-content-center">
-                        <img src="./img/game.png" alt="game">
-                    </div>
-                </div>
-            </div>
-            <!-- immagine safe -->
-            <div class="container">
-                <div class="row">
-                    <div class="col-12 d-flex justify-content-center">
-                        <img src="./img/safe.png" alt="safe">
-                    </div>
-                </div>
-            </div>
-            <!-- immagine sottomarino -->
-            <div class="container">
-                <div class="row">
-                    <div class="col-12 d-flex justify-content-center">
-                        <img src="./img/submarine.png" alt="sottomarino">
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section></section>
-        <section></section>
-        <section></section>
     </main>
-    <footer></footer>
+    <footer class="pt-4">
+        <section>
+            <!-- Location and social icons section -->
+            <div class="container nc-white-text">
+                <div class="row text-center justify-content-center">
+                    <!-- Address -->
+                    <div class="pt-5 col-12 col-lg-4">
+                        <h6 class="text-uppercase">Location</h6>
+                        <span>2215 John Daniel Drive Clark, MO 54243</span>
+                    </div>
+                    <div class=" pt-5 col-12 col-lg-4">
+                        <h6 class="text-uppercase pb-1">Around the web</h6>
+                        <div id="nc-icon-container">
+                            <i class="fa-brands fa-facebook-f mx-1"></i>
+                            <i class="fa-brands fa-google-plus-g mx-1"></i>
+                            <i class="fa-brands fa-twitter mx-1"></i>
+                            <i class="fa-brands fa-linkedin-in mx-1"></i>
+                        </div>
+                    </div>
+                    <div class=" pt-5 pb-4 col-12 col-lg-4 nc-small-container">
+                        <h6 class="text-uppercase pb-1">About Freelancer</h6>
+                        <p>
+                            Freelance is a free to use, open source Bootstrap theme created by
+                            <a href="#" class="text-decoration-none nc-green-text nc-link">
+                                Start Bootstrap
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container nc-white-text text-center py-5">
+                <span>Copyright</span>
+                <i class="bi bi-c-circle"></i>
+                <span>Your Website 2022</span>
+            </div>
+        </section>
+    </footer>
 </body>
 
 </html>
