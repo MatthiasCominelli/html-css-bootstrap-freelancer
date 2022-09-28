@@ -33,13 +33,16 @@
     max-width: 450px;
 }
 
+.grey-background{
+    background-color: #888;
+}
+
 /****************************
     //PERSONAL STYLE CLASSES
 *****************************/
 /** Header **/
-.navbar-toggler i {
-    color: #888;
-    font-size: 1.5rem;
+.w-50{
+    width: 50%;
 }
 
 /** //Header **/
